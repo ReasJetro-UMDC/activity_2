@@ -4,6 +4,9 @@
  */
 package activity_2;
 
+
+
+
 import java.util.Scanner;
 
 class Node {
@@ -25,6 +28,7 @@ class Node {
 class Simple_lib {
     
    Node list;
+ 
    
    public void addNode(String Authors_name, String Book_Title, String ISBN){
         Node newNode = new Node(Authors_name, Book_Title, ISBN);
@@ -38,8 +42,8 @@ class Simple_lib {
          
      } cur.next = newNode; 
          
-    }  
-  }
+    }   
+  } 
    
 public void Display () {
    if (list == null) {
@@ -68,6 +72,7 @@ public void Display () {
  * @author User
  */
 public class Activity_2 {
+    
 
     /**
      * @param args the command line arguments
@@ -79,6 +84,7 @@ public class Activity_2 {
         while (true) {
         System.out.println("Press 1 for adding books ");
         System.out.println("Press 2 for displaying book you add "); 
+           
               int number = in.nextInt();
               in.nextLine();
         
@@ -98,7 +104,9 @@ public class Activity_2 {
             case 2:
                 booklist.Display();
         break;
+       
             default:
+                
                 System.out.println("Invalid Number");
             
         } 
